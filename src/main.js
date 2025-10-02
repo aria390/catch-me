@@ -41,9 +41,10 @@ function increaseTime() {
 function createInsect() {
   const insert = document.createElement("div");
   insert.classList.add("insert");
-  const { x, y } = randomLocation;
+  const { x, y } = randomLocation();
+  console.log(x, y);
   insert.style.top = `${y}px`;
-  insert.style.top = `${x}px`;
+  insert.style.left = `${x}px`;
   insert.innerHTML = `<img src="${selectedEl.src}"/>`;
 
   insert.addEventListener("click", catchInsect);

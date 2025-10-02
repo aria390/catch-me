@@ -10,7 +10,7 @@ body {
 .anime {
   transition: margin 0.5s ease-out;
 }
-.insect {
+.insert {
   cursor: pointer;
   display: flex;
   align-items: center;
