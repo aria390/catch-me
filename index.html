@@ -7,28 +7,28 @@
     <title>catch-me</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="h-screen bg-[#516dff] text-white">
+  <body class="h-screen bg-[#516dff] text-white overflow-hidden">
     <main class="h-[100%]">
       <section
-        class="h-screen flex flex-col items-center justify-center gap-[16px]"
+        class="anime screens h-screen flex flex-col items-center justify-center gap-[16px]"
       >
         <span class="text-[36px] font-[600]">Catch The Insect</span>
-        <button
+        <button id="startBtn"
           class="bg-white text-[#516dff] py-[15px] px-[20px] cursor-pointer hover:opacity-[0.9]"
         >
           play game
         </button>
       </section>
       <section
-        class="h-screen flex flex-col justify-center items-center gap-[50px]"
+        class="anime screens h-screen flex flex-col justify-center items-center gap-[50px]"
       >
         <p class="text-[36px] font-[600] text-center">
-          What is your "favorite" <br />
+          What is your "favorite"
           insect?
         </p>
         <ul class="flex gap-[32px]">
           <li
-            class="border-2 border-white cursor-pointer w-[150px] h-[150px] flex flex-col items-center justify-center hover:text-[#516dff] hover:bg-white"
+            class="chooseBtn border-2 border-white cursor-pointer w-[150px] h-[150px] flex flex-col items-center justify-center hover:text-[#516dff] hover:bg-white"
           >
             <span>Fly</span>
             <img
@@ -38,7 +38,7 @@
             />
           </li>
           <li
-            class="border-2 border-white cursor-pointer w-[150px] h-[150px] flex flex-col items-center justify-center hover:text-[#516dff] hover:bg-white"
+            class="chooseBtn border-2 border-white cursor-pointer w-[150px] h-[150px] flex flex-col items-center justify-center hover:text-[#516dff] hover:bg-white"
           >
             <span>Mosquito</span>
             <img
@@ -47,7 +47,7 @@
               alt=""
             />
           </li>
-          <li class="border-2 border-white cursor-pointer w-[150px] h-[150px] flex flex-col items-center justify-center hover:text-[#516dff] hover:bg-white">
+          <li class="chooseBtn border-2 border-white cursor-pointer w-[150px] h-[150px] flex flex-col items-center justify-center hover:text-[#516dff] hover:bg-white">
             <span>Spider</span>
             <img
               class="w-[100px] h-[100px]"
@@ -55,7 +55,7 @@
               alt=""
             />
           </li>
-          <li class="border-2 border-white cursor-pointer w-[150px] h-[150px] flex flex-col items-center justify-center hover:text-[#516dff] hover:bg-white">
+          <li class="chooseBtn border-2 border-white cursor-pointer w-[150px] h-[150px] flex flex-col items-center justify-center hover:text-[#516dff] hover:bg-white">
             <span>Roach</span>
             <img
               class="w-[100px] h-[100px]"
@@ -65,8 +65,8 @@
           </li>
         </ul>
       </section>
-      <section class="h-screen relative">
-        <span id="time" class="absolute left-[20px] top-[20px] text-[18px] font-[700]">t</span>
+      <section class="anime screens h-screen relative" id="gameContainer">
+        <span id="time" class="absolute left-[20px] top-[20px] text-[18px] font-[700]"></span>
         <span id="score" class="absolute right-[20px] top-[20px] text-[18px] font-[700]">s</span>
         <div></div>
       </section>
